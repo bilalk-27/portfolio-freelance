@@ -1304,6 +1304,10 @@ footer {
     align-items: flex-start;
 }
 
+.project-screenshot {
+    width: 100%;
+}
+
 }
 
 
@@ -1364,4 +1368,45 @@ footer {
 .project-meta-item strong {
     font-size: 15px;
     font-weight: 500;
+}
+
+
+/* =========================
+   MAIARH - SCREENSHOTS
+========================= */
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.project-screenshot {
+    width: 80%;
+    margin: 0 auto;
+    background: var(--secondary-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.project-screenshot img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-screenshot p {
+    margin: 0;
+    padding: 18px 20px;
+    color: var(--secondary-text);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .project-screenshot {
+        width: 100%;
+    }
 }
