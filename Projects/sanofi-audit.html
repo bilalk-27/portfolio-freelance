@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sanofi — Audit interne Data & BI | Bilal Khedimi</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">BK</a>
+
+            <button class="menu-toggle" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+
+            <div class="nav-links">
+                <a href="../index.html#about">À propos</a>
+                <a href="../index.html#skills">Compétences</a>
+                <a href="../index.html#services">Services</a>
+                <a href="../index.html#projects">Projets</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="project-page">
+
+        <!-- HERO -->
+        <section class="project-hero">
+
+            <a href="../index.html#projects" class="back-link">
+                ← Retour aux projets
+            </a>
+
+            <p class="hero-label">
+                PROJET DATA ENGINEERING & BI
+            </p>
+
+            <h1>Sanofi</h1>
+
+            <h2>
+                Fiabilisation et automatisation
+                du reporting d'Audit Interne.
+            </h2>
+
+            <p class="project-intro">
+                Refonte d'un environnement de reporting d'audit interne
+                afin de réduire la dépendance aux fichiers Excel manuels,
+                fiabiliser les données, améliorer les performances
+                et automatiser l'alimentation des dashboards Power BI.
+            </p>
+
+            <div class="project-tags">
+                <span>Power BI</span>
+                <span>Power Query</span>
+                <span>Snowflake</span>
+                <span>SQL</span>
+                <span>Data Modeling</span>
+                <span>Data Quality</span>
+            </div>
+
+
+            <div class="project-meta">
+
+                <div class="project-meta-item">
+                    <span>TYPE</span>
+                    <strong>Data Engineering & BI</strong>
+                </div>
+
+                <div class="project-meta-item">
+                    <span>MON RÔLE</span>
+                    <strong>Data Engineer / Analyst</strong>
+                </div>
+
+                <div class="project-meta-item">
+                    <span>DOMAINE</span>
+                    <strong>Audit Interne</strong>
+                </div>
+
+                <div class="project-meta-item">
+                    <span>RÉSULTAT</span>
+                    <strong>-30 % temps de requête</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 01 CONTEXTE -->
+        <section class="project-section">
+
+            <div class="project-section-title">
+                <span>01</span>
+                <h2>Contexte & problématique</h2>
+            </div>
+
+            <div class="project-text">
+
+                <p>
+                    L'équipe d'Audit Interne s'appuyait sur plusieurs sources
+                    de données pour alimenter ses reportings, notamment
+                    Snowflake, Excel et des données issues de l'outil Interact.
+                </p>
+
+                <p>
+                    Le fonctionnement existant reposait encore en partie
+                    sur des fichiers Excel manuels, ce qui pouvait générer
+                    des dépendances, des risques d'erreur et un manque
+                    de visibilité sur la donnée.
+                </p>
+
+                <p>
+                    L'objectif de la mission était donc d'automatiser davantage
+                    l'intégration des données, harmoniser le dataset d'audit,
+                    améliorer sa fiabilité et simplifier son utilisation
+                    dans Power BI.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 02 MISSION -->
+        <section class="project-section">
+
+            <div class="project-section-title">
+                <span>02</span>
+                <h2>Ma mission</h2>
+            </div>
+
+            <div class="contribution-grid">
+
+                <div class="contribution-card">
+                    <h3>Intégration des données</h3>
+                    <p>
+                        Connexion et transformation de données issues
+                        de Snowflake, Excel et Interact via Power Query.
+                    </p>
+                </div>
+
+                <div class="contribution-card">
+                    <h3>Data Modeling</h3>
+                    <p>
+                        Analyse du modèle existant et évolution vers
+                        une structure plus lisible et performante,
+                        basée sur une logique de modèle en étoile.
+                    </p>
+                </div>
+
+                <div class="contribution-card">
+                    <h3>Data Quality</h3>
+                    <p>
+                        Mise en place de contrôles permettant de détecter
+                        des doublons, incohérences et anomalies
+                        dans les données d'audit.
+                    </p>
+                </div>
+
+                <div class="contribution-card">
+                    <h3>Optimisation</h3>
+                    <p>
+                        Optimisation du modèle et des traitements
+                        afin de réduire les temps de requête
+                        et améliorer la fluidité de l'analyse.
+                    </p>
+                </div>
+
+                <div class="contribution-card">
+                    <h3>Business Intelligence</h3>
+                    <p>
+                        Modification et amélioration des dashboards Power BI
+                        dédiés au suivi de la conformité et de la performance
+                        des audits.
+                    </p>
+                </div>
+
+                <div class="contribution-card">
+                    <h3>Collaboration métier</h3>
+                    <p>
+                        Travail avec les équipes d'audit pour comprendre
+                        les indicateurs, interpréter les résultats
+                        et améliorer la qualité des reportings.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 03 ARCHITECTURE -->
+        <section class="project-section">
+
+            <div class="project-section-title">
+                <span>03</span>
+                <h2>Architecture & flux de données</h2>
+            </div>
+
+            <p class="section-intro">
+                Le reporting reposait sur plusieurs sources intégrées
+                puis transformées avant leur exploitation dans Power BI.
+            </p>
+
+            <div class="sanofi-data-flow">
+
+    <div class="sanofi-source-column">
+
+        <div class="sanofi-flow-box">
+            <span>SOURCE</span>
+            <strong>Interact</strong>
+        </div>
+
+        <div class="sanofi-flow-box">
+            <span>SOURCE</span>
+            <strong>Snowflake</strong>
+        </div>
+
+        <div class="sanofi-flow-box">
+            <span>SOURCE</span>
+            <strong>Excel</strong>
+        </div>
+
+    </div>
+
+    <div class="sanofi-flow-arrow">→</div>
+
+    <div class="sanofi-flow-box sanofi-main-box">
+        <span>TRANSFORMATION</span>
+        <strong>Power Query</strong>
+        <p>Nettoyage, fusion, mapping et préparation des données</p>
+    </div>
+
+    <div class="sanofi-flow-arrow">→</div>
+
+    <div class="sanofi-flow-box sanofi-main-box">
+        <span>REPORTING</span>
+        <strong>Power BI</strong>
+        <p>Dashboards de suivi des audits et indicateurs</p>
+    </div>
+
+</div>
+
+            <div class="technical-note">
+
+                <h3>Objectif d'architecture</h3>
+
+                <p>
+                    Réduire progressivement les manipulations manuelles,
+                    fiabiliser les flux et construire une alimentation
+                    plus robuste pour les dashboards.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 04 MODELE -->
+        <section class="project-section">
+
+            <div class="project-section-title">
+                <span>04</span>
+                <h2>Refonte du modèle de données</h2>
+            </div>
+
+            <div class="project-text">
+
+                <p>
+                    Une partie importante de la mission a consisté à comprendre
+                    le modèle existant, ses relations et les dépendances
+                    entre les différentes tables.
+                </p>
+
+                <p>
+                    L'approche retenue repose sur un
+                    <strong>modèle en étoile</strong>,
+                    afin d'améliorer la lisibilité, les performances
+                    des requêtes et la facilité d'évolution du reporting.
+                </p>
+
+            </div>
+
+            <div class="star-schema">
+
+    <div class="star-dimension star-top">
+        <span>DIMENSION</span>
+        <strong>Audit</strong>
+        <p>Country • GBU</p>
+    </div>
+
+    <div class="star-dimension star-left">
+        <span>DIMENSION</span>
+        <strong>Audit Findings</strong>
+        <p>Rating • Status</p>
+    </div>
+
+    <div class="star-fact">
+        <span>TABLE CENTRALE</span>
+        <strong>Table de fait</strong>
+        <p>Centralisation des données et clés de liaison avec les dimensions</p>
+    </div>
+
+    <div class="star-dimension star-right">
+        <span>DIMENSION</span>
+        <strong>Action Plan</strong>
+    </div>
+
+</div>
+
+        </section>
+
+
+        <!-- 05 DATA QUALITY -->
+        <section class="project-section">
+
+            <div class="project-section-title">
+                <span>05</span>
+                <h2>Data Quality & automatisation</h2>
+            </div>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <span class="feature-number">01</span>
+                    <h3>Gestion des doublons</h3>
+                    <p>
+                        Détection des audits présents dans plusieurs sources
+                        et conservation de l'enregistrement contenant
+                        le plus d'informations.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-number">02</span>
+                    <h3>Tables de mapping</h3>
+                    <p>
+                        Harmonisation de certaines dimensions
+                        afin d'obtenir des données cohérentes
+                        et exploitables dans les analyses.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-number">03</span>
+                    <h3>Data Cleaning</h3>
+                    <p>
+                        Nettoyage et transformation de données issues
+                        de plusieurs sources avant intégration
+                        dans le modèle analytique.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-number">04</span>
+                    <h3>Automatisation</h3>
+                    <p>
+                        Réduction progressive de la dépendance
+                        aux fichiers Excel et amélioration
+                        de l'alimentation automatisée des reportings.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 06 OPTIMISATION -->
+        <section class="project-section">
+
+            <div class="project-section-title">
+                <span>06</span>
+                <h2>Optimisation des performances</h2>
+            </div>
+
+            <div class="project-text">
+
+                <p>
+                    La volumétrie et la complexité du modèle rendaient
+                    les performances particulièrement importantes
+                    pour l'utilisation quotidienne des reportings.
+                </p>
+
+                <p>
+                    Le travail d'optimisation réalisé sur la base
+                    et le modèle a permis de réduire
+                    les temps de requête d'environ
+                    <strong>30 %</strong>.
+                </p>
+
+            </div>
+
+            <div class="result-highlight">
+
+    <div class="result-number">
+        -30 %
+    </div>
+
+    <div class="result-content">
+        <span>PERFORMANCE</span>
+        <h3>Réduction des temps de requête</h3>
+        <p>
+            Optimisation de la base et du modèle analytique
+            afin d'améliorer la rapidité d'exploitation
+            des données dans les reportings.
+        </p>
+    </div>
+
+</div>
+
+        </section>
+
+
+        <!-- 07 DASHBOARDS -->
+        <section class="project-section">
+
+            <div class="project-section-title">
+                <span>07</span>
+                <h2>Dashboards Power BI</h2>
+            </div>
+
+            <p class="section-intro">
+                Les dashboards ont été adaptés afin de mieux exploiter
+                le nouveau dataset et renforcer le suivi
+                de la performance et de la conformité des audits.
+            </p>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <h3>Performance des audits</h3>
+                    <p>
+                        Analyse de l'évolution des audits
+                        et de leurs principaux indicateurs.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Findings</h3>
+                    <p>
+                        Analyse des constats d'audit,
+                        de leur criticité et de leur évolution.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Actions Plans</h3>
+                    <p>
+                        Suivi des plans d'action associés
+                        aux constats identifiés lors des audits.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Analyse géographique</h3>
+                    <p>
+                        Visualisation des indicateurs
+                        selon différentes zones et entités.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    
+        <!-- 08 AVANT APRES -->
+<section class="project-section">
+
+    <div class="project-section-title">
+        <span>08</span>
+        <h2>Avant / Après</h2>
+    </div>
+
+    <p class="section-intro">
+        La mission a permis de faire évoluer un environnement de reporting
+        encore dépendant de manipulations manuelles vers une architecture
+        plus fiable, automatisée et performante.
+    </p>
+
+    <div class="before-after-grid">
+
+        <div class="before-after-card before-card">
+
+            <span class="before-after-label">AVANT</span>
+
+            <h3>Reporting partiellement manuel</h3>
+
+            <div class="before-after-item">
+                <strong>Sources</strong>
+                <p>Multiples fichiers Excel et sources hétérogènes</p>
+            </div>
+
+            <div class="before-after-item">
+                <strong>Traitement</strong>
+                <p>Manipulations et consolidations manuelles</p>
+            </div>
+
+            <div class="before-after-item">
+                <strong>Qualité</strong>
+                <p>Risques de doublons et d'incohérences</p>
+            </div>
+
+            <div class="before-after-item">
+                <strong>Performance</strong>
+                <p>Temps de requête plus importants</p>
+            </div>
+
+        </div>
+
+
+        <div class="before-after-arrow">
+            →
+        </div>
+
+
+        <div class="before-after-card after-card">
+
+            <span class="before-after-label">APRÈS</span>
+
+            <h3>Reporting fiabilisé et automatisé</h3>
+
+            <div class="before-after-item">
+                <strong>Sources</strong>
+                <p>Intégration structurée des données</p>
+            </div>
+
+            <div class="before-after-item">
+                <strong>Traitement</strong>
+                <p>Préparation et transformations via Power Query</p>
+            </div>
+
+            <div class="before-after-item">
+                <strong>Qualité</strong>
+                <p>Contrôles, nettoyage et gestion des doublons</p>
+            </div>
+
+            <div class="before-after-item">
+                <strong>Performance</strong>
+                <p>Temps de requête réduits d'environ 30 %</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- 09 TECHNOLOGIES -->
+        <section class="project-section">
+
+            <div class="project-section-title">
+                <span>09</span>
+                <h2>Technologies</h2>
+            </div>
+
+            <div class="tech-grid">
+
+                <div class="tech-category">
+                    <span>DATA</span>
+                    <p>
+                        Snowflake • SQL • Excel
+                    </p>
+                </div>
+
+                <div class="tech-category">
+                    <span>TRANSFORMATION</span>
+                    <p>
+                        Power Query • Data Cleaning • Data Quality
+                    </p>
+                </div>
+
+                <div class="tech-category">
+                    <span>MODELING</span>
+                    <p>
+                        Star Schema • Data Modeling • Optimisation
+                    </p>
+                </div>
+
+                <div class="tech-category">
+                    <span>BUSINESS INTELLIGENCE</span>
+                    <p>
+                        Power BI • Data Visualization • Reporting
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 10 RESULTATS -->
+<section class="project-section">
+
+    <div class="project-section-title">
+        <span>10</span>
+        <h2>Résultats & impact</h2>
+    </div>
+
+    <div class="results-grid">
+
+        <div class="result-card">
+            <span>01</span>
+            <h3>Automatisation</h3>
+            <p>
+                Réduction de la dépendance aux fichiers Excel
+                et aux manipulations manuelles dans le processus
+                de reporting.
+            </p>
+        </div>
+
+        <div class="result-card">
+            <span>02</span>
+            <h3>Fiabilisation</h3>
+            <p>
+                Mise en place de contrôles, règles de nettoyage
+                et traitements pour améliorer la qualité
+                des données d'audit.
+            </p>
+        </div>
+
+        <div class="result-card">
+            <span>03</span>
+            <h3>-30 %</h3>
+            <p>
+                Réduction des temps de requête grâce
+                à l'optimisation de la base
+                et du modèle de données.
+            </p>
+        </div>
+
+        <div class="result-card">
+            <span>04</span>
+            <h3>Reporting amélioré</h3>
+            <p>
+                Dashboards Power BI plus fiables et mieux
+                adaptés au suivi et à l'analyse des audits.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- CTA -->
+        <section class="project-cta">
+
+            <p class="hero-label">
+                TRAVAILLONS ENSEMBLE
+            </p>
+
+            <h2>
+                Vous souhaitez fiabiliser
+                ou automatiser vos reportings ?
+            </h2>
+
+            <p>
+                Je peux intervenir sur la préparation des données,
+                la modélisation, l'automatisation et la création
+                de solutions Business Intelligence.
+            </p>
+
+            <div class="hero-buttons" style="margin-top: 35px;">
+
+                <a
+                    href="../index.html#contact"
+                    class="btn btn-primary"
+                >
+                    Me contacter
+                </a>
+
+                <a
+                    href="../index.html#projects"
+                    class="btn btn-secondary"
+                >
+                    Voir mes autres projets
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        © 2026 Bilal Khedimi — Data Scientist & Data Engineer
+    </footer>
+
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
